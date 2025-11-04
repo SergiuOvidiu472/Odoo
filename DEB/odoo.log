@@ -1,0 +1,55 @@
+2025-11-04 14:23:53,769 11458 INFO ? odoo: Odoo version 18.0 
+2025-11-04 14:23:53,769 11458 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-11-04 14:23:53,769 11458 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0'] 
+2025-11-04 14:23:53,769 11458 INFO ? odoo: database: odoo@default:default 
+2025-11-04 14:23:53,907 11458 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-11-04 14:23:53,931 11458 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-11-04 14:23:54,092 11458 INFO ? odoo.service.server: HTTP service (werkzeug) running on vbox:8069 
+2025-11-04 14:24:28,944 11458 INFO ? odoo.service.server: Initiating shutdown 
+2025-11-04 14:24:28,944 11458 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-11-04 14:24:29,188 11458 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections  
+2025-11-04 14:24:29,831 11867 INFO ? odoo: Odoo version 18.0 
+2025-11-04 14:24:29,831 11867 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-11-04 14:24:29,831 11867 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0'] 
+2025-11-04 14:24:29,831 11867 INFO ? odoo: database: odoo@default:default 
+2025-11-04 14:24:29,953 11867 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-11-04 14:24:29,958 11867 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-11-04 14:24:30,065 11867 INFO ? odoo.service.server: HTTP service (werkzeug) running on vbox:8069 
+2025-11-04 14:24:43,693 11867 INFO ? odoo.service.server: Initiating shutdown 
+2025-11-04 14:24:43,693 11867 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-11-04 14:24:43,871 11867 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections  
+2025-11-04 14:25:00,107 1138 INFO ? odoo: Odoo version 18.0 
+2025-11-04 14:25:00,108 1138 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-11-04 14:25:00,108 1138 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0'] 
+2025-11-04 14:25:00,108 1138 INFO ? odoo: database: odoo@default:default 
+2025-11-04 14:25:00,278 1138 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-11-04 14:25:00,311 1138 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-11-04 14:25:00,495 1138 INFO ? odoo.service.server: HTTP service (werkzeug) running on vbox:8069 
+2025-11-04 14:30:42,031 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:42] "GET / HTTP/1.1" 303 - 1 0.011 0.017
+2025-11-04 14:30:42,127 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:42] "GET /odoo HTTP/1.1" 303 - 2 0.003 0.010
+2025-11-04 14:30:42,937 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:42] "GET /web/database/selector HTTP/1.1" 200 - 2 0.003 0.798
+2025-11-04 14:30:42,973 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:42] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 1 0.002 0.006
+2025-11-04 14:30:42,984 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:42] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 1 0.002 0.006
+2025-11-04 14:30:43,221 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:43] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.001 0.003
+2025-11-04 14:30:43,248 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:30:43] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 1 0.001 0.006
+2025-11-04 14:32:29,063 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:29] "GET / HTTP/1.1" 303 - 1 0.001 0.006
+2025-11-04 14:32:29,120 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:29] "GET /odoo HTTP/1.1" 303 - 2 0.002 0.008
+2025-11-04 14:32:29,537 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:29] "GET /web/database/selector HTTP/1.1" 200 - 2 0.002 0.405
+2025-11-04 14:32:30,134 1138 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:30] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.001 0.006
+2025-11-04 14:32:38,294 1138 INFO ? odoo.service.server: Initiating shutdown 
+2025-11-04 14:32:38,294 1138 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-11-04 14:32:38,771 1138 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 2 connections  
+2025-11-04 14:32:46,049 6998 INFO ? odoo: Odoo version 18.0 
+2025-11-04 14:32:46,049 6998 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-11-04 14:32:46,049 6998 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0'] 
+2025-11-04 14:32:46,049 6998 INFO ? odoo: database: odoo@default:default 
+2025-11-04 14:32:46,147 6998 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-11-04 14:32:46,151 6998 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-11-04 14:32:46,286 6998 INFO ? odoo.service.server: HTTP service (werkzeug) running on vbox:8069 
+2025-11-04 14:32:49,054 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:49] "GET / HTTP/1.1" 303 - 1 0.001 0.013
+2025-11-04 14:32:49,141 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:49] "GET /odoo HTTP/1.1" 303 - 2 0.003 0.008
+2025-11-04 14:32:49,698 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:49] "GET /web/database/selector HTTP/1.1" 200 - 2 0.002 0.532
+2025-11-04 14:32:49,759 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:49] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 1 0.002 0.005
+2025-11-04 14:32:49,768 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:49] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 1 0.003 0.005
+2025-11-04 14:32:50,028 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:50] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 1 0.002 0.011
+2025-11-04 14:32:50,222 6998 INFO ? werkzeug: 127.0.0.1 - - [04/Nov/2025 14:32:50] "GET /web/service-worker.js HTTP/1.1" 404 - 1 0.003 0.006

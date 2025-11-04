@@ -1,0 +1,12 @@
+● odoo.service - Odoo Open Source ERP and CRM
+     Loaded: loaded (/usr/lib/systemd/system/odoo.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-11-04 15:32:45 CET; 1min 2s ago
+   Main PID: 6998 (odoo)
+      Tasks: 4 (limit: 4601)
+     Memory: 83.1M (peak: 83.6M)
+        CPU: 1.095s
+     CGroup: /system.slice/odoo.service
+             └─6998 /usr/bin/python3 /usr/bin/odoo --config /etc/odoo/odoo.conf --logfile /var/log/odoo/odoo-server.log
+
+nov 04 15:32:45 vbox systemd[1]: Started odoo.service - Odoo Open Source ERP and CRM.
+nov 04 15:32:46 vbox odoo[6998]: Warn: Can't find .pfb for face 'Courier'

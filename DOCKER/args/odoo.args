@@ -1,0 +1,4 @@
+-v odoo_docker-data=var/lib/odoo
+-p 8069:8069
+--name odoo_docker
+--link db:db
