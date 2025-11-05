@@ -27,7 +27,8 @@ Para verificar python y pip
 
 ### Postgresql
 Para instalar postgresql
-> sudo apt install postgresql postgresql-client -y
+> sudo apt install postgresql postgresql-client -y<br>
+
 Para arrancar el servicio de postres
 > sudo systemctl enable postgresql<br>
 > sudo systemctl start postgresql
