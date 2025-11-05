@@ -56,8 +56,6 @@ Para crear un nuevo usuario postgres
 > sudo -u postgres createuser -d -R -S $USER<br>
 > createdb $USER
 
-$USER significa el nombre del usuario que está siendo utilizado en ese momento, (tu nombre de usuario) pero realmente podría servir cualquier otro nombre, aunque es más cómodo usar $USER
-
 ### Descarga del repositorio de odoo
 Repositorio de github de odoo: 
 https://github.com/odoo/odoo.git<br>
