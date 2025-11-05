@@ -3,43 +3,66 @@
 SCRIPT_CONF=$1
 args=()
 
-POSTRES_ARGS=0
+PSQL_ARGS=0
 ODOO_ARGS=1
-VOLUME=2
-ODOO_DB=3
-ODOO_DATA=4
+
+PSQL_VOL=2
+ODOO_VOL=3
+
+PSQL_MOUNT=4
+ODOO_MOUNT=5
 
 loadArgs()
 {
+	IFS='=' read -r -a path <<< $(cat $1 | grep PSQL_ARGS)
+	args[$PSQL_ARGS]=$(cat ${path[1]})
 
-	IFS='=' read -r -a pair <<< $(cat $1 | grep postgres_args)
-	args[0]=${pair[1]}
+	IFS='=' read -r -a path <<< $(cat $1 | grep ODOO_ARGS)
+	args[$ODOO_ARGS]=$(cat ${path[1]})
+}
 
-	IFS='=' read -r -a pair <<< $(cat $1 | grep odoo_args)
-	args[1]=${pair[1]}
+loadVolumes()
+{
+	IFS='=' read -r -a vol <<< $(cat $1 | grep PSQL_VOL)
+	args[$PSQL_VOL]=${vol[1]}
 
-	IFS='=' read -r -a pair <<< $(cat $1 | grep volume)
-	args[2]=${pair[1]}
+	IFS='=' read -r -a vol <<< $(cat $1 | grep ODOO_VOL)
+	args[$ODOO_VOL]=${vol[1]}
+}
 
-	IFS='=' read -r -a pair <<< $(cat $1 | grep odoo-db)
-	args[3]=${pair[1]}
+loadMountPoints()
+{
+	IFS='=' read -r -a mnt <<< $(cat $1 | grep PSQL_MOUNT)
+	args[$PSQL_MOUNT]=${mnt[1]}
 
-	IFS='=' read -r -a pair <<< $(cat $1 | grep odoo-data)
-	args[4]=${pair[1]}
+	IFS='=' read -r -a mnt <<< $(cat $1 | grep ODOO_MOUNT)
+	args[$ODOO_MOUNT]=${mnt[1]}
+}
+
+setVolumes()
+{
+	sudo docker volume ls | grep ${args[$PSQL_VOL]} >/dev/null 2>/dev/null
+	PSQL_ST=$?
+	sudo docker volume ls | grep ${args[$ODOO_VOL]} >/dev/null 2>/dev/null
+	ODOO_ST=$?
+
+	if [ $PSQL_ST != 0 ]
+	then
+		echo "Creating postgres volume"
+		sudo docker volume create ${args[$PSQL_VOL]}
+	fi
+
+	if [ $ODOO_ST != 0 ]
+	then
+		echo "Creating odoo volume"
+		sudo docker volume create ${args[$ODOO_VOL]}
+	fi
 }
 
 loadArgs $SCRIPT_CONF
-sudo docker volume ls | grep ${args[$VOLUME]}
+loadVolumes $SCRIPT_CONF
+loadMountPoints $SCRIPT_CONF
+setVolumes
 
-if [ $? != 0 ]
-then
-	echo "Creating odoo volumes"
-	sudo docker volume create "${args[$VOLUME]}-db"
-	sudo docker volume create "${args[$VOLUME]}-data"
-fi
-
-postgres_params=$(cat ${args[POSTRES_ARGS]})
-odoo_params=$(cat ${args[ODOO_ARGS]})
-
-sudo docker run --volume "${args[$VOLUME]}-db:${args[$ODOO_DB]}" $postgres_params postgres:latest
-sudo docker run --volume "${args[$VOLUME]}-data:${args[$ODOO_DATA]}" $odoo_params odoo:latest
+sudo docker run --volume "${args[$PSQL_VOL]}:${args[$PSQL_MOUNT]}" ${args[PSQL_ARGS]} postgres:latest
+sudo docker run --volume "${args[$ODOO_VOL]}:${args[$ODOO_MOUNT]}" ${args[ODOO_ARGS]} odoo:latest
