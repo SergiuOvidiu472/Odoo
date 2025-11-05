@@ -55,4 +55,7 @@ Para crear un nuevo usuario postgres
 $USER significa el nombre del usuario que está siendo utilizado en ese momento, (tu nombre de usuario) pero realmente podría servir cualquier otro nombre, aunque es más cómodo usar $USER
 
 ### Descarga del repositorio de odoo
-git clone https://github.com/odoo/odoo.git
+Repositorio de github de odoo: 
+https://github.com/odoo/odoo.git<br>
+Se puede descargar en zip o con git clone, la ventaja de git clone es que permite actualizar odoo usando git pull.
+
