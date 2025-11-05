@@ -2,7 +2,7 @@
 ### Odoo: https://hub.docker.com/_/odoo
 
 ### Setup
-> sh odoo.sh<br>
+> ./odoo.sh script.conf<br>
 
 Los parámetros de postgres y odoo están en la carepta args<br>
 Si los volumenes o imagenes de odoo y postgres no están, se crearán solos<br>
