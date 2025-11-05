@@ -28,6 +28,9 @@ Para verificar python y pip
 ### Postgresql
 Para instalar postgresql
 > sudo apt install postgresql postgresql-client -y
+Para arrancar el servicio de postres
+> sudo systemctl enable postgresql<br>
+> sudo systemctl start postgresql
 
 ### Wkhtmltopdf
 wkhtmltopdf debe de descargarse manualmente a través de un paquete debian<br>
