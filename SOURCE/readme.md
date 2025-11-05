@@ -60,5 +60,6 @@ Para crear un nuevo usuario postgres
 Repositorio de github de odoo: 
 https://github.com/odoo/odoo.git<br>
 Version 18: https://github.com/odoo/odoo/tree/18.0<br>
-Se puede descargar en zip o con git clone, la ventaja de git clone es que permite actualizar odoo usando git pull.
-
+Se puede descargar en zip o con git clone, la ventaja de git clone es que permite actualizar odoo usando git pull.<br>
+Dentro del repositorio de odoo:<br>
+> sudo ./setup/debinstall.sh
