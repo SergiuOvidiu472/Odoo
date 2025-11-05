@@ -4,5 +4,5 @@ Instalación de odoo desde:
 - Docker compose
 - Código fuente
 
-### Instalación de docker
+### Instalación de docker https://docs.docker.com/engine/install/ubuntu/
 > sh docker_install.sh
