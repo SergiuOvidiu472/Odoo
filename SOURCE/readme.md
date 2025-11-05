@@ -56,6 +56,13 @@ Para crear un nuevo usuario postgres
 > sudo -u postgres createuser -d -R -S $USER<br>
 > createdb $USER
 
+### Contraseña de la base de datos
+Para poner una contraseña en la base de datos
+> sudo -u postgres $USER<br>
+> \password<br>
+> *escribes tu contraseña*<br>
+> \q<br>
+
 ### Descarga del repositorio de odoo
 Repositorio de github de odoo: 
 https://github.com/odoo/odoo.git<br>
@@ -63,3 +70,4 @@ Version 18: https://github.com/odoo/odoo/tree/18.0<br>
 Se puede descargar en zip o con git clone, la ventaja de git clone es que permite actualizar odoo usando git pull.<br>
 Dentro del repositorio de odoo:<br>
 > sudo ./setup/debinstall.sh
+
