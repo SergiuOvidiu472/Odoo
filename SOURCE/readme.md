@@ -76,3 +76,7 @@ En el repositorio de odoo, hay un archivo llamado odoo-bin, que es el que arranc
 Se puede pasar un archivo de configuración cualquiera con la opción '-c', y '-d' para conectarse con una base de datos<br>
 La opción -i base se utiliza para iniciarlizar la base de datos
 > ./odoo-bin -c odoo.conf -i base -d sergio
+
+### Addons
+En la carpeta raíz de odoo
+> mkdir custom/addons/<br>
