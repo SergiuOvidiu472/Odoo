@@ -8,8 +8,11 @@ services:
     volumes:
       - odoo-web:/var/lib/odoo/
       - odoo-db:/var/lib/postgres/data/
+      - ./addons:/mnt/extra-addons
   db:
     image: postgres:latest
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
@@ -17,6 +20,20 @@ services:
     volumes:
       - odoo-db:/var/lib/postgres/data/
 
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    ports:
+      - "8888:80"
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - db
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
 volumes:
   odoo-web:
   odoo-db:
+  pgadmin-data:
