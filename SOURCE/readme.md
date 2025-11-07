@@ -56,6 +56,8 @@ Para crear un nuevo usuario postgres
 > sudo -u postgres createuser -d -R -S $USER<br>
 > createdb $USER
 
+La variable $USER es igual a lo que devuelve el comando whoami (tu nombre de usuario)
+
 ### Contraseña de la base de datos
 Para poner una contraseña en la base de datos
 > psql<br>
