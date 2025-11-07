@@ -58,7 +58,7 @@ Para crear un nuevo usuario postgres
 
 ### Contraseña de la base de datos
 Para poner una contraseña en la base de datos
-> sudo -u postgres $USER<br>
+> sudo -u postgres psql<br>
 > \password<br>
 > *escribes tu contraseña*<br>
 > \q<br>
