@@ -79,7 +79,11 @@ Dentro del repositorio de odoo:<br>
 En el repositorio de odoo, hay un archivo llamado odoo-bin, que es el que arranca odoo<br>
 Se puede pasar un archivo de configuración cualquiera con la opción '-c', y '-d' para conectarse con una base de datos<br>
 La opción -i base se utiliza para iniciarlizar la base de datos
-> ./odoo-bin -c odoo.conf -i base -d sergio
+<br>
+<br>
+Después de editar el archivo debian/odoo.conf para que db_password tenga la misma contraseña que postgres
+
+> ./odoo-bin -c debian/odoo.conf -i base -d $USER
 
 ### Addons
 En la carpeta raíz de odoo
