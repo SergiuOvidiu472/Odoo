@@ -65,6 +65,8 @@ Para poner una contraseña en la base de datos
 > *escribes tu contraseña*<br>
 > \q<br>
 
+Antes de ejecutar odoo, se debe de editar el archivo odoo.conf, en 'db_password' para que sea la misma que la nueva contraseña recién escrita
+
 ### Descarga del repositorio de odoo
 Repositorio de github de odoo: 
 https://github.com/odoo/odoo.git<br>
