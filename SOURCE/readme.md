@@ -85,6 +85,9 @@ Después de editar el archivo debian/odoo.conf para que db_password tenga la mis
 
 > ./odoo-bin -c debian/odoo.conf -i base -d $USER
 
+### PgAdmin
+https://www.pgadmin.org/download/pgadmin-4-apt/
+
 ### Addons
 En la carpeta raíz de odoo
 > mkdir custom/addons/<br>
